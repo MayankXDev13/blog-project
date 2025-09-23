@@ -26,10 +26,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-gradient-to-r from-blue-600 antialiased`}
       >
-        <NavBar />
-        {children}
+        <div className="sticky top-0 z-50 mx-20 mt-10">
+          <NavBar />
+        </div>
+        <main className="mx-20 my-10">
+          {children}
+        </main>
       </body>
     </html>
   );
