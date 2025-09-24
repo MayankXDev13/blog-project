@@ -1,9 +1,12 @@
-import React from 'react'
+"use client";
 
-function CreateBlog() {
+import { useState } from "react";
+import TextEditor from "@/components/Editor";
+
+export default function CreateBlog() {
+  const [content, setContent] = useState("");
+
   return (
-    <div>CreateBlog</div>
-  )
+   <TextEditor/>
+  );
 }
-
-export default CreateBlog
